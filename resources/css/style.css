@@ -25,17 +25,53 @@ nav{
     justify-content: space-around;
     align-items: center;
   }
+
 .navigation .desktop{
   display: none;
 }
+
 }
 /* navigation header desktop  */
 .desktop .logo{
   display: flex;
   align-items: center;
 }
+.desktop .logo #colmar{
+  font-weight: bold;
+}
+
 .desktop{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.desktop .list-items #campus,#online,#for-companies{
+  padding-right: 1rem;
+} /* end header styling */
+
+/* first banner */
+.banner-one{
+  background-color: lightgray;
+}
+.banner-one .image-container{
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+.banner-one .image-container img{
+  max-width: 100%;
+}
+
+ /* adapt banner for mobile */
+@media only screen and (max-width: 480px){
+  .banner-one {
+    padding: 0rem;
+  }
+  .banner-one .image-container{
+    width: 30rem;
+    padding: 0rem;
+  }
+  .banner-one .image-container img{
+    max-width: 100%;
+  }
+
 }
