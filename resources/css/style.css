@@ -7,18 +7,35 @@ body{
   margin-left: 0;
   margin-right: 0;
 }
-
-/* navigation mobile */
+div{
+  border: 1px solid red;
+}
+nav{
+  border: 1px solid blue;
+  padding: 1rem 1.5rem;
+}
+/* navigation header mobile */
 .navigation .mobile{
   display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
 .navigation .mobile{
-    height: 64px;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-
+.navigation .desktop{
+  display: none;
+}
+}
+/* navigation header desktop  */
+.desktop .logo{
+  display: flex;
+  align-items: center;
+}
+.desktop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
