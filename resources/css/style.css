@@ -52,7 +52,10 @@ nav{
 /* first banner */
 .banner-one{
   background-color: lightgray;
+  display: flex;
 }
+
+/* image styling on first banner, leftside on desktop  */
 .banner-one .image-container{
   width: 60%;
   padding: 2rem 1.5rem;
@@ -61,17 +64,51 @@ nav{
   max-width: 100%;
 }
 
+/* text styling on first banner, rightside on desktop  */
+.banner-one .text-container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-container .line h1{
+  padding-left: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
  /* adapt banner for mobile */
 @media only screen and (max-width: 480px){
   .banner-one {
+    display: block;
     padding: 0rem;
   }
   .banner-one .image-container{
-    width: 30rem;
+    width:  100%;
     padding: 0rem;
   }
-  .banner-one .image-container img{
-    max-width: 100%;
+.banner-one .text-container{
+    width:  100%;
+    padding: 0rem;
   }
-
+.banner-one .text-container .line {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 1rem;
+}
+.banner-one .text-container .latin{
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.banner-one .text-container .button{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: white;
+  background-color: darkgray;
+}
 }
